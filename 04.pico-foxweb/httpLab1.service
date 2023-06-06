@@ -1,0 +1,12 @@
+[Unit]
+Description=Lab1 service
+After=network.target
+
+[Service]
+ExecStart=/usr/local/sbin/PICOFoxweb 8080
+KillMode=process
+User=lab1User
+Group=lab1User
+
+[Install]
+WantedBy=multi-user.target
